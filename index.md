@@ -276,6 +276,10 @@ Edit the text to match who can attend the workshop. For instance:
     This workshop is open to any Smithsonian staff member, intern or fellow at any Smithsonian Unit.
 </p>
 
+<hr/>
+<h2 id="code-of-conduct">Registration</h2>
+<p>If the registration form does not appear below, please go directly to our <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=Kl6bmOQU_k6Tt4zdX8XRHNGczijqfPlMrvt3lVjTvhdUNUE5WkRMN1k0T0hYMTQ5MTQ0NUczM1lJOS4u' target='_blank'>Microsoft Form registration page</a>. </p>
+<iframe width="100%" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=Kl6bmOQU_k6Tt4zdX8XRHNGczijqfPlMrvt3lVjTvhdUNUE5WkRMN1k0T0hYMTQ5MTQ0NUczM1lJOS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
 <hr/>
 
