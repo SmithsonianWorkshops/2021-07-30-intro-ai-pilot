@@ -172,8 +172,9 @@ This block displays the date and links to Google Calendar.
 {% if page.humandate %}
 <p id="when">
   <strong>When:</strong>
-  {{page.humandate}}.
-  {% include workshop_calendar.html %}
+  {{page.humantime}}, 
+  {{page.humandate}}
+  <a href='assets/into_ai_pilot_workshop.ics'>Add to your calendar</a>
 </p>
 {% endif %}
 
