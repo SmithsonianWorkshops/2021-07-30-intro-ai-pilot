@@ -76,8 +76,14 @@ displayed if the 'eventbrite' field in the header is not set.
 </iframe>
 {% endif %}
 
+<p>
+  Artificial Intelligence (or AI) has already become prevalent in our daily lives – from recommendation engines that suggest the next movie to stream, to predictive text that can finish your sentence in emails or text messages. A lot of the technology behind some of these applications are available as open source products, and can be modified to perform research-based or administrative tasks that are specific to the unique types of work that Smithsonian employees do.
+</p>
+<p>
+  However, in order to make sure that AI is adopted ethically, responsibly, and effectively, we want to give you the literacy you will need to critically evaluate AI technologies.
+</p>
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Details</h2>
 
 {% comment %}
 INTRODUCTION
@@ -106,6 +112,12 @@ workshop is only open to people from a particular institution.
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
+
+<p id="who">
+  <strong>Who:</strong>
+  The workshop is aimed at all Smithsonian staff and fellows who are looking for
+  a better understanding of AI and Machine Learning.
+</p>
 
 {% comment %}
 LOCATION
@@ -163,7 +175,7 @@ This block displays the date and links to Google Calendar.
 SPECIAL REQUIREMENTS
 
 Modify the block below if there are any special requirements.
-{% endcomment %}
+
 <p id="requirements">
   <strong>Requirements:</strong>
   {% if online == "false" %}
@@ -175,7 +187,7 @@ Modify the block below if there are any special requirements.
   {% endif %}
   They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
-
+{% endcomment %}
 {% comment %}
 ACCESSIBILITY
 
@@ -252,12 +264,12 @@ Edit the text to match who can attend the workshop. For instance:
 - This workshop is open to the public.
 - If you are interested in attending this workshop, contact me@example.com
   for more information
-
+{% endcomment %}
 <p id="who-can-attend">
     <strong>Who can attend?:</strong>
-    This workshop is open to ....
+    This workshop is open to any Smithsonian badge holders at any Smithsonian Unit. We think that any Smithsonian staff member, intern or fellow can benefit from participating in this workshop.
 </p>
-{% endcomment %}
+
 
 <hr/>
 
@@ -365,69 +377,3 @@ how one of these schedule tables is constructed.
 {% endcomment %}
 {% endif %}
 
-<hr/>
-
-
-{% comment %}
-SETUP
-
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
-
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
-
-<h2 id="setup">Setup</h2>
-
-<p>
-  To participate in a
-  {% if site.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
-</p>
-<p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
-</p>
-
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
-
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instrucctions.
-{% endcomment %}
-{% if online != "false" %}
-{% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "pilot" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
-{% endif %}
