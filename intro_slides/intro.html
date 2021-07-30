@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>AI@SI Workshop Intro</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+## Introduction to AI and Machine Learning Pilot Workshop
+
+*Smithsonian Institution*
+
+July 30, 2021
+
+<font size='5'>*Please take the pre-workshop survey: https://forms.office.com/r/RfD4KneMqB<br/>if you haven't yet*</font>
+</script></section><section  data-markdown><script type="text/template">
+## We will be recording 📹
+
+Only recording instructional portion -- not discussion or breakout rooms
+</script></section><section  data-markdown><script type="text/template">
+## Code of Conduct
+
+We are dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity.
+
+*https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html*
+</script></section><section  data-markdown><script type="text/template">
+## Code of Conduct
+
+* Go to Instructors if you feel the Code of Conduct is being violated.
+* There is also a big blue "Report a Code of Conduct Incident" on the workshop website if you feel the Instructors are not handling appropriately.
+</script></section><section  data-markdown><script type="text/template">
+## Instructor/Helper Intros
+</script></section><section  data-markdown><script type="text/template">
+## What is the Carpentries?
+
+https://carpentries.org/
+
+The Carpentries is a global volunteer-driven organization dedicated to teaching computational skills to researchers and anyone who works with data.
+</script></section><section  data-markdown><script type="text/template">
+## Carpentries way of teaching
+
+*Normally*: Code along, rather than lecturing from PowerPoint, or just demonstrating.
+</script></section><section  data-markdown><script type="text/template">
+## This is a pilot workshop
+
+We intend to give you a top-notch workshop today, but please be patient with us. Your feedback is always important, but it is extra important today.
+</script></section><section  data-markdown><script type="text/template">
+## How to participate
+
+Ask questions with Raised Hand ✋ (under Reactions), or chat in Zoom
+</script></section><section  data-markdown><script type="text/template">
+## How to participate
+
+We will also be asking you to write in a collaborative document.
+
+https://pad.carpentries.org/2021-07-30-intro-ai-pilot
+</script></section><section  data-markdown><script type="text/template">
+## Sign into EtherPad
+
+Go to the workshop EtherPad https://pad.carpentries.org/2021-07-30-intro-ai-pilot now, and "sign in".
+</script></section><section  data-markdown><script type="text/template">
+## Workshop Learning Objectives
+
+Machine Learning "Literacy"
+</script></section><section  data-markdown><script type="text/template">
+## Intro to AI and Machine Learning for GLAM
+
+Overview of terminology and topics.
+</script></section><section  data-markdown><script type="text/template">
+## What is Machine Learning good at?
+
+Types of data that work well with machine learning
+</script></section><section  data-markdown><script type="text/template">
+### Understanding and managing bias in the data science lifecycle
+
+What are the steps of a machine learning process, and how/where can bias get introduced?
+</script></section><section  data-markdown><script type="text/template">
+## Think of how you can apply what you learn today to your own work
+
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
