@@ -60,7 +60,7 @@ pilot_lesson_site: "https://carpentries-incubator.github.io/machine-learning-lib
 pilot_pre_survey: "https://forms.office.com/r/RfD4KneMqB"
 #
 # For a lesson pilot, uncomment the line below and add the URL of your post-workshop survey
-# pilot_post_survey: "put the URL of your post-workshop survey here"
+pilot_post_survey: "https://forms.office.com/r/qerHLjQamx"
 #
 #------------------------------------------------------------
 
